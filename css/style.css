@@ -1,0 +1,134 @@
+:root {
+  --main-color: #ff206e;
+}
+a {
+  text-decoration: none;
+}
+.main-color {
+  color: var(--main-color);
+}
+/* nav section */
+nav .active {
+  color: var(--main-color) !important;
+}
+/* header swction */
+header {
+  background-image: url("../images/home-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+}
+header .caption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .caption h1 {
+  font-size: 60px;
+}
+header .caption p {
+  font-size: 18px;
+}
+header .caption .link-view {
+  color: var(--main-color);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+header .caption ul a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+header .caption ul a i {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+/* about section */
+#about {
+  background-image: url("../images/light_dot.jpg");
+}
+.main-title .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title h2 {
+  font-size: 7rem;
+  letter-spacing: 10px;
+  color: #cccccc88;
+  font-weight: 900;
+}
+.title h3 {
+  position: absolute;
+  font-size: 50px;
+  font-weight: 900;
+}
+/* services section */
+#services {
+  background-image: url("../images/dark_dot.jpg");
+}
+#services .item {
+  border-radius: 5px;
+  position: relative;
+}
+#services .item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#services .item h3 {
+  position: relative;
+}
+#services .item h3::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: var(--main-color);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 1s;
+}
+#services .item:hover h3::after {
+  width: 100px;
+}
+/* testmonial */
+#testmonial .slide .carousel-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transform: translateY(50%);
+}
+#testmonial .slide .item {
+  width: 80%;
+  margin: auto;
+}
+#testmonial .carousel-indicators [data-bs-target] {
+  text-indent: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
